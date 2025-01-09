@@ -20,4 +20,4 @@ def register(request):
 
 def login(request):
     form = UserCreationForm()
-    return 
+    return render(request, 'users/register.html', {'form': form})
