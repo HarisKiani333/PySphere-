@@ -32,8 +32,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
+<<<<<<< HEAD
     'crispy_forms',
     'crispy_bootstrap4',
+=======
+>>>>>>> 1dd3b63334544b314dc8c0cadbd79859276d583e
     'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -119,10 +122,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+<<<<<<< HEAD
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+=======
+>>>>>>> 1dd3b63334544b314dc8c0cadbd79859276d583e
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1dd3b63334544b314dc8c0cadbd79859276d583e

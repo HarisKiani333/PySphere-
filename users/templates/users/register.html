@@ -1,12 +1,19 @@
 {% extends "blog/base.html" %}
+<<<<<<< HEAD
 {% load crispy_forms_tags %}
+=======
+>>>>>>> 1dd3b63334544b314dc8c0cadbd79859276d583e
 {% block content %}
 <div class="content-section">
     <form method="POST">
         {% csrf_token %}
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">Join Today</legend>
+<<<<<<< HEAD
             {{form|crispy}}
+=======
+            {{ form.as_p }}
+>>>>>>> 1dd3b63334544b314dc8c0cadbd79859276d583e
         </fieldset>
         <div class="form-group">
             <button class="btn btn-outline-info" type="submit">Sign Up</button>
