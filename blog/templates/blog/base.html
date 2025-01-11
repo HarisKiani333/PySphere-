@@ -31,9 +31,19 @@
                 <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
               </div>
               <div class="navbar-nav">
+                {% if user.is_authenticated %}
+                <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
+                <form method="post" action="{% url 'logout' %}" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-link nav-item nav-link" style="display: inline; padding: 0; border: none; background: none; color: inherit; cursor: pointer;">
+                        Logout
+                    </button>
+                </form>
+                {% else %}
                 <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
                 <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
-
+                {% endif %}
+                
               </div>
             </div>
           </div>
